@@ -10,6 +10,8 @@ let newRandomNumberButton = document.getElementById("newRandomNumberButton")
 let newRandomNumberField = document.getElementById("newRandomNumberField")
 let arrayOfRandomNumbers = []
 
+
+
 function createRandomGrid(inputNumber) {
     gridContainer.innerHTML = " "
     arrayOfRandomNumbers = []
@@ -30,3 +32,19 @@ createButton.addEventListener("click", function () {
 )
 
 createRandomGrid(95)
+
+let gridItems = document.querySelectorAll(".gridContainer div");
+
+
+for (let i = 0; i < gridItems.length; i++) {
+    gridItems[i].addEventListener("mouseover", function () {
+        if (gridItems[i].style.backgroundColor == "orange") {
+            gridItems[i].style.backgroundColor = "#ffa50082";
+        }
+        if (gridItems[i].style.backgroundColor == "lightpink") {
+            gridItems[i].style.backgroundColor = "#ffb6c163"
+        }
+    })
+}
+
+

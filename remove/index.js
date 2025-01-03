@@ -1,4 +1,6 @@
+newRandomNumberField.value = "-"
 newRandomNumberButton.addEventListener("click", function () {
+
 
 
     newRandomNumberField.value = Math.floor(Math.random() * 100)
@@ -17,6 +19,7 @@ newRandomNumberButton.addEventListener("click", function () {
 
 let removeButton = document.getElementById("removeButton");
 let removeField = document.getElementById("removeField");
+removeField.value = "-"
 
 removeButton.addEventListener("click", function () {
     let gridItems = document.querySelectorAll(".gridContainer div");
@@ -35,7 +38,7 @@ removeButton.addEventListener("click", function () {
     removeField.value += targetNumberToRemove + " times "
 
     if (isFound == false) {
-        removeField.value = "NOT FOUND"
+        removeField.value = "Nothing to remove"
     }
 
 
