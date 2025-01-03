@@ -1,0 +1,18 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+}
+
+.gridContainer div {
+    border: solid 1px black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 2px;
+
+}
+
+#container {
+    text-align: center;
+}
