@@ -39,12 +39,22 @@ let gridItems = document.querySelectorAll(".gridContainer div");
 for (let i = 0; i < gridItems.length; i++) {
     gridItems[i].addEventListener("mouseover", function () {
         if (gridItems[i].style.backgroundColor == "orange") {
-            gridItems[i].style.backgroundColor = "#ffa50082";
+            gridItems[i].style.backgroundColor = "moccasin";
         }
-        if (gridItems[i].style.backgroundColor == "lightpink") {
-            gridItems[i].style.backgroundColor = "#ffb6c163"
+        if (gridItems[i].style.backgroundColor == "lightcoral") {
+            gridItems[i].style.backgroundColor = "lightpink"
         }
     })
 }
 
+for (let i = 0; i < gridItems.length; i++) {
+    gridItems[i].addEventListener("mouseout", function () {
+        if (gridItems[i].style.backgroundColor == "moccasin") {
+            gridItems[i].style.backgroundColor = "orange";
+        }
 
+        if (gridItems[i].style.backgroundColor == "lightpink") {
+            gridItems[i].style.backgroundColor = "lightcoral";
+        }
+    })
+}
