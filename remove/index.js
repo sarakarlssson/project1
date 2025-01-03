@@ -40,6 +40,32 @@ removeButton.addEventListener("click", function () {
     if (isFound == false) {
         removeField.value = "Nothing to remove"
     }
-
 })
 
+//fixa så att det funkar att byta färg även efter ny create 
+
+
+let gridItems = document.querySelectorAll(".gridContainer div");
+
+gridContainer.addEventListener("mouseover", function (event) {
+    if (event.target.tagName === "DIV") {
+        if (event.target.style.backgroundColor === "orange") {
+            event.target.style.backgroundColor = "moccasin";
+        }
+        if (event.target.style.backgroundColor === "lightcoral") {
+            event.target.style.backgroundColor = "lightpink";
+        }
+    }
+});
+
+gridContainer.addEventListener("mouseout", function (event) {
+    if (event.target.tagName === "DIV") {
+
+        if (event.target.style.backgroundColor === "moccasin") {
+            event.target.style.backgroundColor = "orange";
+        }
+        if (event.target.style.backgroundColor === "lightpink") {
+            event.target.style.backgroundColor = "lightcoral";
+        }
+    }
+});
