@@ -18,6 +18,7 @@ function createRandomGrid(createNumberInput) {
         let div = document.createElement("div");
         let randomNumber = Math.floor(Math.random() * 100);
         div.textContent = randomNumber;
+        div.classList.add("numberDivs")
         gridContainer.appendChild(div)
     }
 }
