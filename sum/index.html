@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Sum</title>
     <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -17,9 +18,18 @@
             <input type="text" id="inputNumber">
             <button id="createButton">Create</button>
 
+            <div id="sumContainer">
+                <label for="totalSumField">Sum of All: </label>
+                <input type="text" id="totalSumField">
+                <br>
+                <label for="sumOfMarkedField">Sum of Marked: </label>
+                <input type="text" id="sumOfMarkedField">
+                <button>Reset</button>
+            </div>
         </div>
-        <script src="../common.js"> </script>
     </div>
+    <script src="../common.js"> </script>
+    <script src="index.js"> </script>
 </body>
 
 </html>
