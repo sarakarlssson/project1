@@ -61,7 +61,6 @@ resetButton.addEventListener("click", function () {
             gridItems[i].style.backgroundColor = "lightgray"
         }
     }
-
 })
 
 createButton.addEventListener("click", function () {
