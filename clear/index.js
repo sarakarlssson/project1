@@ -1,11 +1,20 @@
 let clearButton = document.getElementById("clearButton")
 let gridItems = document.querySelectorAll(".gridContainer .numberDivs")
 
-
 gridContainer.addEventListener("click", function (event) {
     if (event.target.classList.contains("numberDivs")) {
-        event.target.style.backgroundColor = "orange"
-        event.target.textContent = " "
+        if (event.target.style.backgroundColor == "skyblue") {
+            event.target.style.backgroundColor = "red"
+            event.target.textContent = ""
+        }
+    }
+})
+
+gridContainer.addEventListener("mousemove", function (event) {
+    if (event.target.classList.contains("numberDivs")) {
+        if (event.target.style.backgroundColor == "red") {
+            event.target.style.backgroundColor = "orange"
+        }
     }
 })
 
@@ -28,7 +37,6 @@ clearButton.addEventListener("click", function () {
 
 createButton.addEventListener("click", function () {
     gridItems = document.querySelectorAll(".gridContainer .numberDivs")
-
 })
 
 gridContainer.addEventListener("mouseover", function (event) {
@@ -43,6 +51,15 @@ gridContainer.addEventListener("mouseout", function (event) {
     if (event.target.classList.contains("numberDivs")) {
         if (event.target.style.backgroundColor == "skyblue") {
             event.target.style.backgroundColor = "lightgrey"
+        }
+    }
+})
+
+gridContainer.addEventListener("click", function (event) {
+    if (event.target.classList.contains("numberDivs")) {
+        if (event.target.style.backgroundColor == "orange") {
+            event.target.style.backgroundColor = "lightgrey"
+            event.target.textContent = Math.floor(Math.random() * 101)
         }
     }
 })

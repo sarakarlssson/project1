@@ -19,6 +19,7 @@ function createRandomGrid(createNumberInput) {
         let randomNumber = Math.floor(Math.random() * 101);
         div.textContent = randomNumber;
         div.classList.add("numberDivs")
+        div.style.backgroundColor = "lightgrey"
         gridContainer.appendChild(div)
     }
 }
