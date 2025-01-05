@@ -16,7 +16,7 @@ function createRandomGrid(createNumberInput) {
 
     for (let i = 1; i <= createNumberInput; i++) {
         let div = document.createElement("div");
-        let randomNumber = Math.floor(Math.random() * 100);
+        let randomNumber = Math.floor(Math.random() * 101);
         div.textContent = randomNumber;
         div.classList.add("numberDivs")
         gridContainer.appendChild(div)

@@ -23,7 +23,6 @@ function repetition() {
         }
         if (numberCounter == mostRepeatedNumber) {
             mostRepeatedNumberField.value = theMostRepeatedNumber += ", " + compareNumber + "(x)"
-
         }
 
         numberCounter = 0;
@@ -53,7 +52,6 @@ function repetition() {
         }
     }
 }
-
 
 createButton.addEventListener("click", function () {
     repetition();
