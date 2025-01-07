@@ -15,6 +15,7 @@ newRandomNumberButton.addEventListener("click", function () {
 
         if (gridItems[i].textContent == newRandomNumberField.value) {
             gridItems[i].style.backgroundColor = "orange"
+            gridItems[i].classList.add("markedOrange")
         }
     }
 })
@@ -55,17 +56,33 @@ gridContainer.addEventListener("mouseover", function (event) {
         if (event.target.style.backgroundColor === "lightcoral") {
             event.target.style.backgroundColor = "lightpink";
         }
+        if (event.target.style.backgroundColor == "lightgrey") {
+            event.target.style.backgroundColor = "moccasin"
+        }
+
     }
 });
+
+// gridContainer.addEventListener("mouseover", function (event) {
+
 
 gridContainer.addEventListener("mouseout", function (event) {
     if (event.target.tagName === "DIV") {
 
-        if (event.target.style.backgroundColor === "moccasin") {
-            event.target.style.backgroundColor = "orange";
-        }
-        if (event.target.style.backgroundColor === "lightpink") {
+        if (event.target.style.backgroundColor === "lightpink" && (event.target.textContent == "X")) {
             event.target.style.backgroundColor = "lightcoral";
         }
+
+        if (event.target.style.backgroundColor === "moccasin") {
+            event.target.style.backgroundColor = "lightgrey";
+        }
+
+        if (event.target.classList.contains("markedOrange") && (event.target.textContent != "X")) {
+            event.target.style.backgroundColor == "moccasin";
+            event.target.style.backgroundColor = "orange"
+
+        }
+
     }
+
 });
