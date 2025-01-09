@@ -11,22 +11,28 @@
 
 <body>
     <div id="container">
-        <a href="../index.html">HOME</a>
-        <p>Du är i sum mappen</p>
-        <div>
-            <label for=inputNumber> How many numbers in the grid?</label>
-            <input type="text" id="inputNumber">
-            <button id="createButton">Create</button>
+        <a href="../index.html" id="homeLink">HOME</a>
+        <div id="buttonContainer">
+            <div id="firstDiv">
+                <label for=inputNumber> How many numbers in the grid?</label>
+                <input type="text" id="inputNumber">
+                <button id="createButton">Create</button>
+            </div>
 
             <div id="sumContainer">
-                <label for="totalSumField">Sum of All: </label>
-                <input type="text" id="totalSumField">
-                <br>
-                <label for="sumOfMarkedField">Sum of Marked: </label>
-                <input type="text" id="sumOfMarkedField">
-                <button id="resetButton">Reset</button>
+                <div id="secondDiv">
+                    <label for="totalSumField">Sum of All: </label>
+                    <input type="text" id="totalSumField">
+                </div>
+                <div id="thirdDiv">
+                    <label for="sumOfMarkedField">Sum of Marked: </label>
+                    <input type="text" id="sumOfMarkedField">
+                    <button id="resetButton">Reset</button>
+
+                </div>
             </div>
         </div>
+    </div>
     </div>
     <script src="../common.js"> </script>
     <script src="index.js"> </script>

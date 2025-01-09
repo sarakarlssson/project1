@@ -45,7 +45,6 @@ gridContainer.addEventListener("click", function (event) {
         }
     }
     sumOfMarkedNumbers(event)
-    console.log(event.target);
 })
 
 let resetButton = document.getElementById("resetButton")

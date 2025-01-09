@@ -1,0 +1,11 @@
+#resetButtonText {
+    font-size: 22px;
+}
+
+#resetButton {
+    height: 40px;
+    font-size: 20px;
+    background-color: #d0cbb7;
+    border-radius: 4px;
+    width: 70px;
+}

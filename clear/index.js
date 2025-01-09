@@ -33,6 +33,14 @@ gridContainer.addEventListener("click", function (event) {
     }
 })
 
+gridContainer.addEventListener("mouseover", function (event) {
+    if (event.target.classList.contains("numberDivs")) {
+        if (event.target.style.backgroundColor == "red") {
+            event.target.style.backgroundColor = "orange"
+        }
+    }
+})
+
 gridContainer.addEventListener("mouseout", function (event) {
     if (event.target.classList.contains("numberDivs")) {
         if (event.target.style.backgroundColor == "orange") {
@@ -41,13 +49,6 @@ gridContainer.addEventListener("mouseout", function (event) {
     }
 })
 
-gridContainer.addEventListener("mouseover", function (event) {
-    if (event.target.classList.contains("numberDivs")) {
-        if (event.target.style.backgroundColor == "red") {
-            event.target.style.backgroundColor = "orange"
-        }
-    }
-})
 
 clearButton.addEventListener("click", function () {
     for (let i = 0; i < gridItems.length; i++) {

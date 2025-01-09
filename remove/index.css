@@ -1,3 +1,36 @@
-.numberDivs:hover {
-    background-color: moccasin;
+#secondDiv {
+    margin: 20px;
+}
+
+#removeField {
+    text-align: center;
+    height: 34px;
+    font-size: 18px;
+}
+
+#newRandomNumberField {
+    text-align: center;
+    width: 50px;
+    height: 34px;
+    font-size: 18px;
+}
+
+#newRandomNumberButton,
+#removeButton {
+    background-color: #d0cbb7;
+    border-radius: 4px;
+    font-size: 20px;
+    height: 40px;
+}
+
+#newRandomNumberButton {
+    width: 220px;
+}
+
+#removeButton {
+    width: 100px;
+}
+
+body {
+    background-color: #eeebd3;
 }

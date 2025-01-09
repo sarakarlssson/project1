@@ -1,18 +1,101 @@
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(19, 1fr);
+    background-color: #f4f3e4;
+    margin: 30px 60px;
+    background-color: #f4f3e4;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px grey;
 }
 
 .gridContainer div {
-    border: solid 1px black;
+
     border-radius: 10px;
     text-align: center;
-    /* background-color: lightgrey; */
     padding: 20px;
     margin: 2px;
 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    height: 50px;
+    margin: 4px;
+    width: 50px;
 }
+
+
+/* FÖRSTA SIDAN */
 
 #container {
     text-align: center;
+}
+
+body {
+    background-color: #eeebd3;
+}
+
+#createButton {
+    background-color: #d0cbb7;
+    border-radius: 4px;
+    width: 80px;
+    height: 34px;
+    font-size: 18px;
+}
+
+#homeLink {
+    font-size: 30px;
+    text-decoration: none;
+    color: #717070;
+    padding: 20px 60px;
+    background-color: #fffde6;
+    border-radius: 9px;
+    display: inline-block;
+    border-bottom: solid 3px #e5dbdb;
+    box-shadow: 5px 2px 4px #d0d0bc;
+}
+
+#homeLink:hover {
+    background-color: #dadace;
+}
+
+
+#firstDiv {
+    margin: 20px;
+    font-size: 25px;
+}
+
+#inputNumber {
+    width: 63px;
+    height: 24px;
+    text-align: center;
+    height: 30px;
+    font-size: 18px;
+
+}
+
+#firstPageDiv a {
+    text-decoration: none;
+    padding: 50px;
+    background-color: #f4f3e4;
+    border-bottom: solid 3px #e5dbdb;
+    border-radius: 8px;
+    margin: 0px 10px;
+    font-size: 30px;
+    box-shadow: 5px 2px 4px #d0d0bc;
+    color: #717070;
+}
+
+#firstPageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#firstPageDiv a:hover {
+    background-color: #dadace;
+
 }

@@ -11,18 +11,16 @@
 
 <body>
     <div id="container">
-        <a href="../index.html">HOME</a>
-        <p> Du är i clear mappen </p>
-        <div>
-            <label for=inputNumber> How many numbers in the grid?</label>
-            <input type="text" id="inputNumber">
-            <button id="createButton">Create</button>
+        <a href="../index.html" id="homeLink">HOME</a>
+        <div id="buttonContainer">
+            <div id="firstDiv">
+                <label for=inputNumber> How many numbers in the grid?</label>
+                <input type="text" id="inputNumber">
+                <button id="createButton">Create</button>
+            </div>
+
+            <button id="clearButton">Fill Cleared</button>
         </div>
-
-        <br>
-
-        <button id="clearButton">Fill Cleared</button>
-
 
         <script src="../common.js"> </script>
         <script src="index.js"> </script>

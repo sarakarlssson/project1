@@ -1,4 +1,34 @@
 #sumContainer {
     margin: 10px;
+}
 
+#secondDiv {
+    margin: 10px;
+    font-size: 20px;
+}
+
+#totalSumField {
+    font-size: 18px;
+    text-align: center;
+    width: 100px;
+
+}
+
+#thirdDiv {
+    font-size: 20px;
+}
+
+#sumOfMarkedField {
+    font-size: 18px;
+    text-align: center;
+    width: 80px;
+
+}
+
+#resetButton {
+    background-color: #d0cbb7;
+    border-radius: 4px;
+    width: 80px;
+    height: 31px;
+    font-size: 18px;
 }

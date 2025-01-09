@@ -1,0 +1,19 @@
+#addUpToNumberField {
+    width: 50px;
+    text-align: center;
+    height: 35px;
+    font-size: 18px;
+
+}
+
+#secondDiv {
+    font-size: 23px;
+}
+
+#findTwoCellsButton {
+    height: 40px;
+    font-size: 20px;
+    background-color: #d0cbb7;
+    border-radius: 4px;
+    width: 156px;
+}
