@@ -44,8 +44,6 @@ removeButton.addEventListener("click", function () {
     }
 })
 
-//fixa så att det funkar att byta färg även efter ny create 
-
 let gridItems = document.querySelectorAll(".gridContainer div");
 
 gridContainer.addEventListener("mouseover", function (event) {
@@ -62,9 +60,6 @@ gridContainer.addEventListener("mouseover", function (event) {
 
     }
 });
-
-// gridContainer.addEventListener("mouseover", function (event) {
-
 
 gridContainer.addEventListener("mouseout", function (event) {
     if (event.target.tagName === "DIV") {

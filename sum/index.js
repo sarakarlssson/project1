@@ -20,8 +20,6 @@ createButton.addEventListener("click", function () {
 
 sumOfAllNumbers()
 
-//summa av de markerade siffrorna 
-
 let sumOfMarkedField = document.getElementById("sumOfMarkedField")
 let totalSumOfMarkedNumbers = 0;
 sumOfMarkedField.value = "-"

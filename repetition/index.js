@@ -8,22 +8,10 @@ function repetition() {
     let mostRepeatedNumber = -Infinity
     let theMostRepeatedNumber;
     let array = []
-
-    // loopa igenom array, i är compareNumber
-
-    //en till loop i den yttre loopen som är j
-    //ifall compareNumber är samma som j.textcontent så ska countern +1, samt diven ska få grön färg samt den blir tilldelad the mostrepeated number
-    // om countern är större än mostRepeatedNumber så blir mostrepeated number countern och sätts i input fältet 
-    //om countern är samm som mostRepeatednumber så sätter inputfältet += det nya comparenumber
-
-    //
-
-    // Yttre loop: gå igenom alla element
     for (let i = 0; i < gridItems.length; i++) {
         let repeatedNumberCounter = 0;
         compareNumber = gridItems[i].textContent
 
-        // Inre loop: räkna hur många gånger det aktuella numret förekommer
         for (let j = 0; j < gridItems.length; j++) {
             if (gridItems[j].textContent == compareNumber) {
                 repeatedNumberCounter++

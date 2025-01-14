@@ -17,13 +17,17 @@ function createRandomGrid(createNumberInput) {
     for (let i = 1; i <= createNumberInput; i++) {
         let div = document.createElement("div");
         let randomNumber = Math.floor(Math.random() * 100);
+        if (randomNumber == 0) {
+            i -= 1;
+            continue;
+        }
         div.textContent = randomNumber;
         div.classList.add("numberDivs")
         div.style.backgroundColor = "lightgrey"
         gridContainer.appendChild(div)
     }
 }
-//skapar en ny grid med random nummer när du klickar på createknappen
+
 createButton.addEventListener("click", function () {
     createRandomGrid(inputNumber.value)
 })

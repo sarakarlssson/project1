@@ -1,0 +1,24 @@
+a {
+    text-decoration: none;
+    padding: 50px;
+    background-color: #f4f3e4;
+    border-bottom: solid 3px #e5dbdb;
+    border-radius: 8px;
+    margin: 0px 10px;
+    font-size: 30px;
+    box-shadow: 5px 2px 4px #d0d0bc;
+    color: #717070;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body a:hover {
+    background-color: #dadace;
+
+}

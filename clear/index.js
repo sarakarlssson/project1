@@ -20,15 +20,13 @@ gridContainer.addEventListener("mouseout", function (event) {
 
 gridContainer.addEventListener("click", function (event) {
     if (event.target.classList.contains("numberDivs")) {
-        // Första click: från skyblue -> orange + rensa text
         if (event.target.style.backgroundColor === "skyblue") {
             event.target.style.backgroundColor = "orange";
             event.target.textContent = " ";
         }
-        // Andra click: från orange -> lightgrey + lägg till random number
         else if (event.target.style.backgroundColor === "orange") {
             event.target.style.backgroundColor = "skyblue";
-            event.target.textContent = Math.floor(Math.random() * 101);
+            event.target.textContent = Math.floor(Math.random() * 100);
         }
     }
 })
@@ -49,12 +47,11 @@ gridContainer.addEventListener("mouseout", function (event) {
     }
 })
 
-
 clearButton.addEventListener("click", function () {
     for (let i = 0; i < gridItems.length; i++) {
         if (gridItems[i].style.backgroundColor == "red") {
             gridItems[i].style.backgroundColor = "lightgrey"
-            gridItems[i].textContent = Math.floor(Math.random() * 101)
+            gridItems[i].textContent = Math.floor(Math.random() * 100)
         }
     }
 })
